@@ -90,7 +90,7 @@ class Emc_Login_Settings {
 		$opts = get_option( 'emcl_settings' );
 		$emc_infocard = isset( $opts['emc_infocard'] ) ? $opts['emc_infocard'] : '';
 		// And display the view
-		include_once $this->views . 'settings-server-infocard.php';
+		include_once $this->views . 'settings-server-infocard-page.php';
 	}
 
 	/**
