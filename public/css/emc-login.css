@@ -1,0 +1,50 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+.css-emcl {
+    background: url("../img/emc-logo.png") no-repeat 10px center;
+    background-color: #9267A8;
+    background-size: 28px 25px, cover;
+    line-height: 1;
+    display: block;
+    padding-left: 50px;
+    color: #fff !important;
+    text-decoration: none !important;
+    transition: opacity .3s ease-in;
+    text-shadow: 1px 1px 0px #000;
+    opacity: .90;
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto 16px;
+}
+
+a.css-emcl:hover {
+    background-color: #9D67A8;
+    background-size: 28px 25px, cover;
+    color: #FDFDFD;
+    opacity: 1;
+}
+
+a.css-emcl div {
+    height: 45px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.css-emcl img {
+    display: none;
+    width: 20px;
+    right: 6px;
+    top: 31%;
+    position: absolute;
+    height: auto;
+}
+
+.css-emcl.emcl-loading img {
+    display: block !important;
+}
+
+.emcl_error {
+    margin-bottom: 15px !important;
+}
