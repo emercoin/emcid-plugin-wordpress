@@ -76,6 +76,7 @@ class Emc_Login_Public {
 		wp_localize_script( $this->plugin_name, 'emcl', apply_filters( 'emcl/js_vars', array(
 			'redirect'     => urlencode($this->redirect_uri),
 			'appId'        => $this->opts['emc_client_id'],
+			'authPage'     => $this->opts['emc_auth_page'],
 			'l18n'         => array(
 				'chrome_ios_alert'      => __( 'Please login into Emercoin ID and then click the button again', 'emcl' ),
 			)
