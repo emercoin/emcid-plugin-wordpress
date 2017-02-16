@@ -39,6 +39,10 @@ class Emc_Login_Public {
 	 */
 	private $version;
 
+	const AUTH_PAGE  = 'https://oauth.authorizer.io/oauth/v2/auth';
+	const TOKEN_PAGE = 'https://oauth.authorizer.io/oauth/v2/token';
+	const INFOCARD   = 'https://oauth.authorizer.io/infocard';
+
 	/**
 	 * Initialize the class and set its properties.
 	 *
@@ -76,7 +80,7 @@ class Emc_Login_Public {
 		wp_localize_script( $this->plugin_name, 'emcl', apply_filters( 'emcl/js_vars', array(
 			'redirect'     => urlencode($this->redirect_uri),
 			'appId'        => $this->opts['emc_client_id'],
-			'authPage'     => $this->opts['emc_auth_page'],
+			'authPage'     => $this::AUTH_PAGE,
 			'l18n'         => array(
 				'chrome_ios_alert'      => __( 'Please login into Emercoin ID and then click the button again', 'emcl' ),
 			)
@@ -111,7 +115,7 @@ class Emc_Login_Public {
 		        $_REQUEST
 		    )
 		) {
-		    $connect = $this->opts['emc_token_page'];
+		    $connect = $this::TOKEN_PAGE;
 
 		    $opts = [
 		        'http' => [
@@ -146,7 +150,7 @@ class Emc_Login_Public {
 		    $response = json_decode($response, true);
 
 		    if (!array_key_exists('error', $response)) {
-		        $infocard_url = $this->opts['emc_infocard'];
+		        $infocard_url = $this::INFOCARD;
 		        $infocard_url .= '/'.$response['access_token'];
 		        $opts = [
 		            'http' => [
