@@ -1,5 +1,5 @@
 Make the Emercoin ID Application:
- - Log in to any Emercoin ID webserver with EMC SSL certificate (such as https://id.emercoin.net)
+ - Log in to any Emercoin ID webserver with EMC SSL certificate at https://oauth.authorizer.io
  - Create the app
  - Use URI as https://YOUR_WORDPRESS_HOSTNAME/wp-admin/admin-ajax.php?action=emcl_emc_login
 
