@@ -1,0 +1,14 @@
+Make the Emercoin ID Application:
+ - Log in to any Emercoin ID webserver with EMC SSL certificate (such as https://id.emercoin.net)
+ - Create the app
+ - Use URI as https://YOUR_WORDPRESS_HOSTNAME/wp-admin/admin-ajax.php?action=emcl_emc_login
+
+
+Plugin installation and configuration:
+ - Zip the folder 'emercoin_id' (such as 'zip -r emercoin_id.zip emercoin_id')
+ - Log in to the admin dashboard
+ - Upload plugin in the Plugin section
+ - Activate plugin
+ - Go to Settings -> Emercoin ID, and configure them
+
+After that you can see the "Sign in with Emercoin ID" button at the login page.

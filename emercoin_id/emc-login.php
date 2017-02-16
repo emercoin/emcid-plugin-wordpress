@@ -13,8 +13,8 @@
  * Version:           1.0.0
  * Author:            Aspanta Limited
  * Author URI:        https://www.aspanta.com
- * License:           GPL-2.0+
- * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+ * License:           MIT
+ * License URI:       https://raw.githubusercontent.com/emercoin/emcid-plugin-wordpress/master/LICENSE
  * Text Domain:       emcl
  * Domain Path:       /languages
  */
